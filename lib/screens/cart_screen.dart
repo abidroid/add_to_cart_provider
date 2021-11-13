@@ -20,6 +20,7 @@ class CartScreen extends StatelessWidget {
             return Padding(
               padding: const EdgeInsets.all(10.0),
               child: ListView.builder(
+
                   itemCount: itemsViewModel.itemList.length,
                   itemBuilder: (context, index){
 

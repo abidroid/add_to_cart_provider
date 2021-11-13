@@ -12,7 +12,6 @@ class CartTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
 
-
     return Container(
       margin: const EdgeInsets.only(bottom: 10),
       decoration: BoxDecoration(
@@ -44,6 +43,7 @@ class CartTile extends StatelessWidget {
                 children: [
 
                   OutlinedButton(onPressed: (){
+
                     itemsViewModel.decreaseCartQuantity(item);
                   }, child: const Text('-')),
                   Text(item.cartQuantity.toString()),

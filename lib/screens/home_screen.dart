@@ -18,17 +18,17 @@ class HomeScreen extends StatelessWidget {
             onTap: (){
 
               Navigator.of(context).push(MaterialPageRoute(builder: (context){
-                return CartScreen();
+                return const CartScreen();
               }));
 
             },
-            child: CartCounterWidget())],
+            child: const CartCounterWidget())],
       ),
 
       body: Padding(
         padding: const EdgeInsets.all(10),
 
-        child: Container(
+        child: SizedBox(
           height: 180,
           child: ListView.builder(
             scrollDirection: Axis.horizontal,
